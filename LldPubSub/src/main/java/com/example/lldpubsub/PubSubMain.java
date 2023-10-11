@@ -6,5 +6,7 @@ public class PubSubMain {
         publisher.register(new EmailSubscriberImpl("Email Sub"));
         publisher.register(new SMSSubscriberImpl("SMS Sub"));
         publisher.publish("first message");
+        System.out.println("-----------------");
+        publisher.replay(0);
     }
 }
