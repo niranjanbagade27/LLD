@@ -3,7 +3,7 @@ package com.example.lldpubsub;
 import lombok.ToString;
 
 @ToString
-public class EmailSubscriberImpl implements Subscriber{
+public class EmailSubscriberImpl implements Subscriber {
 
     public String subscriberName;
 
@@ -13,6 +13,6 @@ public class EmailSubscriberImpl implements Subscriber{
 
     @Override
     public void sendMessage(String message) {
-        System.out.println("Email is "+message);
+        System.out.println("Email is " + message);
     }
 }
